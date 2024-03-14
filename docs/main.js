@@ -29,7 +29,6 @@ function checkOrientationVertical() {
 // checkOrientation();
 // window.addEventListener('resize', checkOrientation);
 
-  
 
 let currentLocation = 1;
 let numOfPapers = 4;
@@ -56,8 +55,8 @@ function closeBook(isAtBeginning) {
             book.style.transform = "translateY(50vh)";
         }
         
-        prevBtn.style.transform = "translateX(-1vw)";
-        nextBtn.style.transform = "translateX(1vw)";
+        prevBtn.style.transform = "translateX(-.5vw)";
+        nextBtn.style.transform = "translateX(.5vw)";
     }
     else {
         if(isAtBeginning) {

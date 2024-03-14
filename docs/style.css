@@ -252,7 +252,7 @@ i {
     .book {
         position: center; 
         width: 470vw;
-        height: 900vh;
+        height: 100vh;
         /* transform: rotateX(180deg); */
         transition: transform 0.5s;
         transform-style: preserve-3d;
@@ -294,12 +294,12 @@ i {
     }
 
     .back-content {
-        transform: rotateX(180deg) translateY(35vh) translateX(4vh);
+        transform: rotateX(180deg) translateY(45vh) translateX(5vh);
     }
 
-    .back #b1 {
+    /* .back #b1 {
         transform: rotateX(180deg) translateY(3vh) translateX(4vh);
-    }
+    } */
 
     /* .back-content > * {
         transform: rotateX(180deg);
@@ -331,6 +331,11 @@ i {
         cursor: pointer;
         margin: 3%;
         z-index: 5;
+    }
+
+    i {
+        font-size: 7vw;
+        color: black;
     }
 
     
