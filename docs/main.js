@@ -38,8 +38,8 @@ let maxLocation = numOfPapers + 1;
 function openBook() {
     if (checkOrientationVertical) {
         book.style.transform = "translateY(20vh)";
-        // prevBtn.style.transform = "translateY(-150%)";
-        // nextBtn.style.transform = "translateY(150%)";
+        prevBtn.style.transform = "translateX(6vw)";
+        nextBtn.style.transform = "translateX(-6vw)";
     } else {
         book.style.transform = "translateX(50%)";
         prevBtn.style.transform = "translateX(-550%)";
@@ -56,8 +56,8 @@ function closeBook(isAtBeginning) {
             book.style.transform = "translateY(50vh)";
         }
         
-        // prevBtn.style.transform = "translateY(0px)";
-        // nextBtn.style.transform = "translateY(0px)";
+        prevBtn.style.transform = "translateX(-1vw)";
+        nextBtn.style.transform = "translateX(1vw)";
     }
     else {
         if(isAtBeginning) {
