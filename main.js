@@ -11,14 +11,28 @@ const paper4 = document.querySelector("#p4");
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
 
+function checkOrientation() {
+    if (window.innerHeight > window.innerWidth) {
+        // Display the message to rotate device if the user is in portrait mode. 
+        document.getElementById('rotate-device-message').style.display = 'flex';
+    } else {
+        document.getElementById('rotate-device-message').style.display = 'none';
+    }
+}
+
+checkOrientation();
+window.addEventListener('resize', checkOrientation);
+
+  
+
 let currentLocation = 1;
 let numOfPapers = 4;
 let maxLocation = numOfPapers + 1;
 
 function openBook() {
     book.style.transform = "translateX(50%)";
-    prevBtn.style.transform = "translateX(-250px)";
-    nextBtn.style.transform = "translateX(250px)";
+    prevBtn.style.transform = "translateX(-550%)";
+    nextBtn.style.transform = "translateX(550%)";
 }
 
 function closeBook(isAtBeginning) {
@@ -28,8 +42,8 @@ function closeBook(isAtBeginning) {
         book.style.transform = "translateX(100%)";
     }
     
-    prevBtn.style.transform = "translateX(0px)";
-    nextBtn.style.transform = "translateX(0px)";
+    prevBtn.style.transform = "translateX(0%)";
+    nextBtn.style.transform = "translateX(0%)";
 }
 
 function goNextPage() {
