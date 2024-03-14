@@ -13,13 +13,13 @@ nextBtn.addEventListener("click", goNextPage);
 
 function checkOrientationVertical() {
     if (window.innerHeight > window.innerWidth) {
-        return True
+        return true
         // Display the message to rotate device if the user is in portrait mode. 
         // document.getElementById('book').style.display = 'none';
         // document.getElementById('rotate-device-message').style.display = 'flex';
         // document.body.style.backgroundImage = 'none';
     } else {
-        return False
+        return false
         // document.getElementById('rotate-device-message').style.display = 'none';
         // document.getElementById('book').style.display = 'flex';
         // document.body.style.backgroundImage = 'url("background.jpg")';
@@ -35,7 +35,7 @@ let numOfPapers = 4;
 let maxLocation = numOfPapers + 1;
 
 function openBook() {
-    if (checkOrientationVertical) {
+    if (checkOrientationVertical()) {
         book.style.transform = "translateY(20vh)";
         prevBtn.style.transform = "translateX(6vw)";
         nextBtn.style.transform = "translateX(-6vw)";
@@ -48,7 +48,7 @@ function openBook() {
 }
 
 function closeBook(isAtBeginning) {
-    if (checkOrientationVertical) {
+    if (checkOrientationVertical()) {
         if(isAtBeginning) {
             book.style.transform = "translateY(0%)";
         } else {
