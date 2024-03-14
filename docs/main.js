@@ -71,6 +71,20 @@ function closeBook(isAtBeginning) {
     
 }
 
+function darkenColor(decrease) {
+    let color = getComputedStyle(document.body).backgroundColor;
+    const parts = color.match(/rgba?\((\d+), (\d+), (\d+),? ?([0-9.]+)?\)/).slice(1);
+    const darkened = parts.map((part, index) => {
+        if (index < 3) {
+            let num = parseInt(part, 10) - decrease;
+            return Math.max(0, Math.min(255, num));
+        }
+        return part; 
+    });
+    return `rgba(${darkened.join(", ")})`;
+}
+
+
 function goNextPage() {
     if(currentLocation < maxLocation) {
         switch(currentLocation) {
@@ -78,18 +92,22 @@ function goNextPage() {
                 openBook();
                 paper1.classList.add("flipped");
                 paper1.style.zIndex = 1;
+                document.body.style.backgroundColor = darkenColor(39);
                 break;
             case 2:
                 paper2.classList.add("flipped");
                 paper2.style.zIndex = 2;
+                document.body.style.backgroundColor = darkenColor(39);
                 break;
             case 3: 
                 paper3.classList.add("flipped");
                 paper3.style.zIndex = 3;
+                document.body.style.backgroundColor = darkenColor(39);
                 break;
             case 4:
                 paper4.classList.add("flipped");
                 paper4.style.zIndex = 4;
+                document.body.style.backgroundColor = darkenColor(39);
                 closeBook(false);
                 break;
             default:
@@ -106,19 +124,23 @@ function goPrevPage() {
                 closeBook(true);
                 paper1.classList.remove("flipped");
                 paper1.style.zIndex = 4;
+                document.body.style.backgroundColor = darkenColor(-39);
                 break;
             case 3:
                 paper2.classList.remove("flipped");
                 paper2.style.zIndex = 3;
+                document.body.style.backgroundColor = darkenColor(-39);
                 break;
             case 4:
                 paper3.classList.remove("flipped");
                 paper3.style.zIndex = 2;
+                document.body.style.backgroundColor = darkenColor(-39);
                 break;
             case 5:
                 openBook();
                 paper4.classList.remove("flipped");
                 paper4.style.zIndex = 1;
+                document.body.style.backgroundColor = darkenColor(-39);
                 break;
             default:
                 throw new Error("unknown state: PrevPage");

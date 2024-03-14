@@ -116,7 +116,7 @@ button:hover i {
 
 i {
     font-size: 3vw;
-    color: black;
+    color: white;
 }
 
 /* flipped effect */
@@ -326,7 +326,9 @@ i {
     }
 
     button {
-        border: none;
+        border: 3px solid black;
+        border-radius: 50%;
+        border-color: black;
         background-color: transparent;
         cursor: pointer;
         margin: 3%;
@@ -335,7 +337,7 @@ i {
 
     i {
         font-size: 7vw;
-        color: black;
+        color: white;
     }
 
     
