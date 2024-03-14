@@ -11,21 +11,23 @@ const paper4 = document.querySelector("#p4");
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
 
-function checkOrientation() {
+function checkOrientationVertical() {
     if (window.innerHeight > window.innerWidth) {
+        return True
         // Display the message to rotate device if the user is in portrait mode. 
-        document.getElementById('book').style.display = 'none';
-        document.getElementById('rotate-device-message').style.display = 'flex';
-        document.body.style.backgroundImage = 'none';
+        // document.getElementById('book').style.display = 'none';
+        // document.getElementById('rotate-device-message').style.display = 'flex';
+        // document.body.style.backgroundImage = 'none';
     } else {
-        document.getElementById('rotate-device-message').style.display = 'none';
-        document.getElementById('book').style.display = 'flex';
-        document.body.style.backgroundImage = 'url("background.jpg")';
+        return False
+        // document.getElementById('rotate-device-message').style.display = 'none';
+        // document.getElementById('book').style.display = 'flex';
+        // document.body.style.backgroundImage = 'url("background.jpg")';
     }
 }
 
-checkOrientation();
-window.addEventListener('resize', checkOrientation);
+// checkOrientation();
+// window.addEventListener('resize', checkOrientation);
 
   
 
@@ -34,20 +36,40 @@ let numOfPapers = 4;
 let maxLocation = numOfPapers + 1;
 
 function openBook() {
-    book.style.transform = "translateX(50%)";
-    prevBtn.style.transform = "translateX(-550%)";
-    nextBtn.style.transform = "translateX(550%)";
+    if (checkOrientationVertical) {
+        book.style.transform = "translateY(20vh)";
+        // prevBtn.style.transform = "translateY(-150%)";
+        // nextBtn.style.transform = "translateY(150%)";
+    } else {
+        book.style.transform = "translateX(50%)";
+        prevBtn.style.transform = "translateX(-550%)";
+        nextBtn.style.transform = "translateX(550%)";
+    }
+    
 }
 
 function closeBook(isAtBeginning) {
-    if(isAtBeginning) {
-        book.style.transform = "translateX(0%)";
-    } else {
-        book.style.transform = "translateX(100%)";
+    if (checkOrientationVertical) {
+        if(isAtBeginning) {
+            book.style.transform = "translateY(0%)";
+        } else {
+            book.style.transform = "translateY(50vh)";
+        }
+        
+        // prevBtn.style.transform = "translateY(0px)";
+        // nextBtn.style.transform = "translateY(0px)";
+    }
+    else {
+        if(isAtBeginning) {
+            book.style.transform = "translateX(0%)";
+        } else {
+            book.style.transform = "translateX(100%)";
+        }
+        
+        prevBtn.style.transform = "translateX(0px)";
+        nextBtn.style.transform = "translateX(0px)";
     }
     
-    prevBtn.style.transform = "translateX(0px)";
-    nextBtn.style.transform = "translateX(0px)";
 }
 
 function goNextPage() {
