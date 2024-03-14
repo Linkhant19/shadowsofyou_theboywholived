@@ -211,7 +211,7 @@ i {
   }
   
   @media screen and (orientation: portrait) {
-    .book #rotate-device-message {
+    #rotate-device-message {
         position: fixed; /* fixed covers up the whole screen */
         top: 0;
         left: 0;

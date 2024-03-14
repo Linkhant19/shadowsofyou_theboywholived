@@ -14,9 +14,13 @@ nextBtn.addEventListener("click", goNextPage);
 function checkOrientation() {
     if (window.innerHeight > window.innerWidth) {
         // Display the message to rotate device if the user is in portrait mode. 
+        document.getElementById('book').style.display = 'none';
         document.getElementById('rotate-device-message').style.display = 'flex';
+        document.body.style.backgroundImage = 'none';
     } else {
         document.getElementById('rotate-device-message').style.display = 'none';
+        document.getElementById('book').style.display = 'flex';
+        document.body.style.backgroundImage = 'url("background.jpg")';
     }
 }
 
@@ -42,8 +46,8 @@ function closeBook(isAtBeginning) {
         book.style.transform = "translateX(100%)";
     }
     
-    prevBtn.style.transform = "translateX(0%)";
-    nextBtn.style.transform = "translateX(0%)";
+    prevBtn.style.transform = "translateX(0px)";
+    nextBtn.style.transform = "translateX(0px)";
 }
 
 function goNextPage() {
