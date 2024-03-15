@@ -403,13 +403,12 @@ i {
         transform: none;
     }
     
-    /* .back #b4 {
-        backface-visibility: visible;
-        font-family: 'Times New Roman', Times, serif;
-        color: red;
-        margin-bottom: 5vh;
+    .back #b4 {
+        justify-content: center; 
+        align-items: center;
+        font-size: 4vw;
         transform: rotateX(180deg) translateY(5vh) translateX(2vh);
-    } */
+    }
     
     button {
         border: 3px solid black;
