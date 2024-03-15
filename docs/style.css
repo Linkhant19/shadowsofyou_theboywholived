@@ -231,7 +231,7 @@ i {
 
     .back-content {
         margin-bottom: 5vh;
-        transform: rotateX(180deg) translateY(40vh) translateX(3.5vh);
+        transform: rotateX(180deg) translateY(10vh) translateX(3.5vh);
     }
 
     .front-content {
