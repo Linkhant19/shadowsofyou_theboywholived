@@ -166,7 +166,7 @@ i {
     
     .book {
         width: 300vw;
-        height: 60vh;
+        height: 50vh;
         position: relative;
         /* transform: rotateX(180deg); */
         transition: transform 0.5s;
