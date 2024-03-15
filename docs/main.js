@@ -95,7 +95,7 @@ function goNextPage() {
                 document.body.style.backgroundColor = darkenColor(39);
                 if (checkOrientationVertical()) {
                     // document.body.style.backgroundColor = "rgb(139, 154, 156, 0.1)";
-                    document.body.style.backgroundImage = "url(background1.jpg)";
+                    document.body.style.backgroundImage = "url(background1.JPG)";
                 }
                 document.getElementById('b1').style.backfaceVisibility = 'visible'; 
                 break;
@@ -104,7 +104,7 @@ function goNextPage() {
                 paper2.style.zIndex = 2;
                 document.body.style.backgroundColor = darkenColor(39);
                 if (checkOrientationVertical()) {
-                    document.body.style.backgroundImage = "url(background2.jpg)";
+                    document.body.style.backgroundImage = "url(background2.JPG)";
                 }
                 document.getElementById('b2').style.backfaceVisibility = 'visible'; 
                 break;
@@ -113,7 +113,7 @@ function goNextPage() {
                 paper3.style.zIndex = 3;
                 document.body.style.backgroundColor = darkenColor(39);
                 if (checkOrientationVertical()) {
-                    document.body.style.backgroundImage = "url(background3.jpg)";
+                    document.body.style.backgroundImage = "url(background3.JPG)";
                 }
                 document.getElementById('b3').style.backfaceVisibility = 'visible'; 
                 break;
@@ -122,7 +122,7 @@ function goNextPage() {
                 paper4.style.zIndex = 4;
                 document.body.style.backgroundColor = darkenColor(39);
                 if (checkOrientationVertical()) {
-                    document.body.style.backgroundImage = "url(background4.jpg)";
+                    document.body.style.backgroundImage = "url(background4.JPG)";
                 }
                 document.getElementById('b4').style.backfaceVisibility = 'visible'; 
                 closeBook(false);
@@ -153,7 +153,7 @@ function goPrevPage() {
                 document.body.style.backgroundColor = darkenColor(-39);
                 document.getElementById('b2').style.backfaceVisibility = 'hidden'; 
                 if (checkOrientationVertical()) {
-                    document.body.style.backgroundImage = "url(background1.jpg)";
+                    document.body.style.backgroundImage = "url(background1.JPG)";
                 }
                 break;
             case 4:
@@ -162,7 +162,7 @@ function goPrevPage() {
                 document.body.style.backgroundColor = darkenColor(-39);
                 document.getElementById('b3').style.backfaceVisibility = 'hidden'; 
                 if (checkOrientationVertical()) {
-                    document.body.style.backgroundImage = "url(background2.jpg)";
+                    document.body.style.backgroundImage = "url(background2.JPG)";
                 }
                 break;
             case 5:
@@ -171,7 +171,7 @@ function goPrevPage() {
                 paper4.style.zIndex = 1;
                 document.body.style.backgroundColor = darkenColor(-39);
                 if (checkOrientationVertical()) {
-                    document.body.style.backgroundImage = "url(background3.jpg)";
+                    document.body.style.backgroundImage = "url(background3.JPG)";
                 }
                 document.getElementById('b4').style.backfaceVisibility = 'hidden'; 
                 break;
