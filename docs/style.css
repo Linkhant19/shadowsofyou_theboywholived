@@ -321,9 +321,8 @@ i {
     }
     
     .book {
-        position: center; 
-        width: 470vw;
-        height: 100vh;
+        width: 300vw;
+        height: 110vh;
         /* transform: rotateX(180deg); */
         transition: transform 0.5s;
         transform-style: preserve-3d;

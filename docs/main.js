@@ -36,7 +36,7 @@ let maxLocation = numOfPapers + 1;
 
 function openBook() {
     if (checkOrientationVertical()) {
-        book.style.transform = "translateY(20vh)";
+        book.style.transform = "translateY(40vh)";
         prevBtn.style.transform = "translateX(6vw)";
         nextBtn.style.transform = "translateX(-6vw)";
     } else {
@@ -52,7 +52,7 @@ function closeBook(isAtBeginning) {
         if(isAtBeginning) {
             book.style.transform = "translateY(0%)";
         } else {
-            book.style.transform = "translateY(50vh)";
+            book.style.transform = "translateY(60vh)";
         }
         
         prevBtn.style.transform = "translateX(-.5vw)";
