@@ -156,7 +156,7 @@ i {
         align-items: center;
         font-family: 'Times New Roman', Times, serif;
         font-size: 2.15vw;
-        background-image: url(backgroundRotated.jpg); 
+        /* background-image: url(backgroundRotated.jpg);  */
         background-size: 100%;
         background-position: center; 
         position: relative;
@@ -166,11 +166,10 @@ i {
     
     .book {
         width: 300vw;
-        height: 50vh;
+        height: 48%;
         position: relative;
         /* transform: rotateX(180deg); */
         transition: transform 0.5s;
-        transform-style: preserve-3d;
         transform-origin: center;
     }
     
@@ -230,8 +229,8 @@ i {
     }
 
     .back-content {
-        margin-bottom: 5vh;
-        transform: rotateX(180deg) translateY(10vh) translateX(3.5vh);
+        margin-top: 10vh;
+        transform: rotateX(180deg) translateY(30vh) translateX(3.5vh);
     }
 
     .front-content {
