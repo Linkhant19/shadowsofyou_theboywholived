@@ -94,6 +94,7 @@ function goNextPage() {
                 paper1.style.zIndex = 1;
                 document.body.style.backgroundColor = darkenColor(39);
                 if (checkOrientationVertical()) {
+                    document.body.style.backgroundColor = "rgb(139, 154, 156, 0.1)";
                     document.body.style.backgroundImage = "url(background1.jpg)";
                 }
                 document.getElementById('b1').style.backfaceVisibility = 'visible'; 
