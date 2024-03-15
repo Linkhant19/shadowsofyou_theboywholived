@@ -394,8 +394,7 @@ i {
         margin-left: 6%;
     }
     
-    .front #f1, 
-    .back #b4 {
+    .front #f1 {
         justify-content: center; 
         align-items: center;
         font-size: 4vw;
@@ -404,13 +403,13 @@ i {
         transform: none;
     }
     
-    .back #b4 {
+    /* .back #b4 {
         backface-visibility: visible;
         font-family: 'Times New Roman', Times, serif;
         color: red;
         margin-bottom: 5vh;
         transform: rotateX(180deg) translateY(5vh) translateX(2vh);
-    }
+    } */
     
     button {
         border: 3px solid black;
