@@ -398,13 +398,15 @@ i {
     .back #b4 {
         justify-content: center; 
         align-items: center;
-        font-size: 5vw;
+        font-size: 4vw;
         margin-left: 0%;
         margin-top: 0%;
         transform: none;
     }
     
     .back #b4 {
+        font-display: block;
+        color: black;
         margin-bottom: 5vh;
         transform: rotateX(180deg) translateY(5vh) translateX(2vh);
     }
@@ -440,7 +442,7 @@ i {
     
     /* page orders */
     #p1 {
-        position:relative;z-index: 4;
+        z-index: 4;
     }
     
     #p2 {
