@@ -379,6 +379,7 @@ i {
     }
 
     .back-content {
+        font-variant: hidden;
         transform: rotateX(180deg) translateY(45vh) translateX(5vh);
     }
 
