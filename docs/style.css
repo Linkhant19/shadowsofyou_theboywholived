@@ -1,3 +1,5 @@
+@media screen and (orientation: landscape) {
+
 * {
     margin: 0;
     padding: 0;
@@ -93,10 +95,6 @@ body {
     margin-top: 0%;
 }
 
-.back #b1 {
-    margin-top: 8%;
-}
-
 button {
     border: none;
     background-color: transparent;
@@ -142,157 +140,6 @@ i {
     z-index: 1;
 }
 
-
-/* implementing a different style sheet if users are on mobile devices */
-@media screen and (max-width: 1080px) and (orientation: landscape) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        height: 100vh;
-        /* width: calc(100vw - 480px); */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 2vw;
-        background-color: rgb(139, 154, 156, 0.9);
-        background-image: url(backgroundRotated.jpg); 
-        background-size: 100%;
-        background-position: center; 
-        position: relative;
-        background-blend-mode: color;
-        
-    }
-    
-    .book {
-        position: center; 
-        width: 470vw;
-        height: 100vh;
-        /* transform: rotateX(180deg); */
-        transition: transform 0.5s;
-        transform-style: preserve-3d;
-        transform-origin: center;
-    }
-    
-    .paper {
-        position: absolute; /* to make the papers stack */
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        perspective: 1500px; /* to make animation more 3d */
-    }
-    
-    .front,
-    .back {
-        background-color: white;
-        position: absolute; 
-        display: flex;
-        flex-direction: column;       
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        transform-origin: top;
-        transition: transform 0.5s;
-    }
-
-    .front {
-        z-index: 1;
-        backface-visibility: hidden;
-        border-left: hidden;
-        border-top: 3px solid black;
-    }
-    
-    .back {
-        z-index: 0;
-    }
-    
-    
-    .front-content, 
-    .back-content {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: top; 
-        margin-top: 1vh;
-        align-items: left;
-        line-height: 115%;
-        
-    }
-
-    .back-content {
-        transform: rotateX(180deg) translateY(45vh) translateX(5vh);
-    }
-
-    .front-content {
-        margin-left: 6%;
-    }
-    
-    .front #f1, 
-    .back #b4 {
-        justify-content: center; 
-        align-items: center;
-        font-size: 3vw;
-        line-height: 160%;
-        margin-left: 0%;
-        margin-top: 0%;
-    }
-    
-    .back #b4 {
-        transform: rotateX(180deg) translateY(0vh) translateX(0vh);
-    }
-    
-    button {
-        border: 3px solid black;
-        border-radius: 50%;
-        border-color: black;
-        background-color: transparent;
-        cursor: pointer;
-        margin: 3%;
-        z-index: 5;
-    }
-    
-    button:focus {
-        outline: none;
-    }
-    
-    button:hover i {
-        color: grey;
-    }
-    
-    i {
-        font-size: 7vw;
-        color: white;
-    }
-    
-    /* flipped effect */
-    .flipped .front, 
-    .flipped .back {
-        transform: rotateX(180deg);
-    }
-    
-    /* page orders */
-    #p1 {
-        z-index: 4;
-    }
-    
-    #p2 {
-        z-index: 3;
-    }
-    
-    #p3 {
-        z-index: 2;
-    }
-    
-    #p4 {
-        z-index: 1;
-    }
 }
   
 @media screen and (orientation: portrait) {
@@ -322,7 +169,7 @@ i {
     
     .book {
         width: 300vw;
-        height: 110vh;
+        height: 60vh;
         position: relative;
         /* transform: rotateX(180deg); */
         transition: transform 0.5s;
@@ -387,7 +234,7 @@ i {
     .back-content {
         backface-visibility: hidden;
         margin-bottom: 5vh;
-        transform: rotateX(180deg) translateY(35vh) translateX(3.5vh);
+        transform: rotateX(180deg) translateY(30vh) translateX(1.5vh);
     }
 
     .front-content {
@@ -403,12 +250,12 @@ i {
         transform: none;
     }
     
-    .back #b4 {
+    /* .back #b4 {
         justify-content: center; 
         align-items: center;
         font-size: 4vw;
         transform: rotateX(180deg) translateY(5vh) translateX(2vh);
-    }
+    } */
     
     button {
         border: 3px solid black;
