@@ -381,7 +381,7 @@ i {
     }
 
     .back-content {
-        background-position: hidden;
+        backface-visibility: hidden;
         margin-bottom: 1.5vh;
         transform: rotateX(180deg) translateY(42vh) translateX(5vh);
     }
@@ -400,9 +400,9 @@ i {
         margin-top: 0%;
     }
     
-    .back #b4 {
+    /* .back #b4 {
         transform: rotateX(180deg) translateY(0vh) translateX(0vh);
-    }
+    } */
     
     button {
         border: 3px solid black;
