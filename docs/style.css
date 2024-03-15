@@ -405,8 +405,9 @@ i {
     }
     
     .back #b4 {
-        font-display: block;
-        color: black;
+        backface-visibility: visible;
+        font-family: 'Times New Roman', Times, serif;
+        color: red;
         margin-bottom: 5vh;
         transform: rotateX(180deg) translateY(5vh) translateX(2vh);
     }
