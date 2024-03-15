@@ -374,7 +374,7 @@ i {
         display: flex;
         flex-direction: column;
         justify-content: top; 
-        margin-top: 1.5vh;
+        margin-top: 5vh;
         align-items: left;
         line-height: 115%;
         
@@ -382,8 +382,8 @@ i {
 
     .back-content {
         backface-visibility: hidden;
-        margin-bottom: 1.5vh;
-        transform: rotateX(180deg) translateY(42vh) translateX(5vh);
+        margin-bottom: 5vh;
+        transform: rotateX(180deg) translateY(35vh) translateX(5vh);
     }
 
     .front-content {
@@ -400,9 +400,9 @@ i {
         margin-top: 0%;
     }
     
-    /* .back #b4 {
-        transform: rotateX(180deg) translateY(0vh) translateX(0vh);
-    } */
+    .back #b4 {
+        transform: rotateX(180deg) translateY(20vh) translateX(0vh);
+    }
     
     button {
         border: 3px solid black;
