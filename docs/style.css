@@ -310,7 +310,7 @@ i {
         justify-content: center;
         align-items: center;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 2vw;
+        font-size: 2.15vw;
         background-color: rgb(139, 154, 156, 0.9);
         background-image: url(backgroundRotated.jpg); 
         background-size: 100%;
@@ -376,14 +376,14 @@ i {
         justify-content: top; 
         margin-top: 5vh;
         align-items: left;
-        line-height: 115%;
+        line-height: 120%;
         
     }
 
     .back-content {
         backface-visibility: hidden;
         margin-bottom: 5vh;
-        transform: rotateX(180deg) translateY(35vh) translateX(5vh);
+        transform: rotateX(180deg) translateY(35vh) translateX(3vh);
     }
 
     .front-content {
@@ -401,7 +401,8 @@ i {
     }
     
     .back #b4 {
-        transform: rotateX(180deg) translateY(20vh) translateX(0vh);
+        margin-bottom: 5vh;
+        transform: rotateX(180deg) translateY(5vh) translateX(2vh);
     }
     
     button {
