@@ -323,6 +323,7 @@ i {
     .book {
         width: 300vw;
         height: 110vh;
+        position: relative;
         /* transform: rotateX(180deg); */
         transition: transform 0.5s;
         transform-style: preserve-3d;
@@ -335,6 +336,7 @@ i {
         height: 100%;
         top: 0;
         left: 0;
+        bottom: 0;
         perspective: 1500px; /* to make animation more 3d */
     }
     
@@ -366,20 +368,22 @@ i {
     
     .front-content, 
     .back-content {
+        position: absolute;
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: top; 
-        margin-top: 1vh;
+        margin-top: 1.5vh;
         align-items: left;
         line-height: 115%;
         
     }
 
     .back-content {
-        font-variant: hidden;
-        transform: rotateX(180deg) translateY(45vh) translateX(5vh);
+        background-position: hidden;
+        margin-bottom: 1.5vh;
+        transform: rotateX(180deg) translateY(42vh) translateX(5vh);
     }
 
     .front-content {
@@ -430,19 +434,19 @@ i {
     }
     
     /* page orders */
-    #p1 {
-        z-index: 4;
+    .book #p1 {
+        position:relative;z-index: 4;
     }
     
-    #p2 {
+    .book #p2 {
         z-index: 3;
     }
     
-    #p3 {
+    .book #p3 {
         z-index: 2;
     }
     
-    #p4 {
+    .book #p4 {
         z-index: 1;
     }
 
