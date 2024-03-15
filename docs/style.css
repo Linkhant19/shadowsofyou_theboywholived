@@ -1,4 +1,4 @@
-@media screen and (orientation: landscape) {
+/* @media screen and (orientation: landscape) { */
 
 * {
     margin: 0;
@@ -86,8 +86,7 @@ body {
     margin-left: 6%;
 }
 
-.front #f1, 
-.back #b4 {
+.front #f1 {
     justify-content: center; 
     align-items: center;
     font-size: 122%;
@@ -141,7 +140,6 @@ i {
     z-index: 1;
 }
 
-}
   
 @media screen and (orientation: portrait) {
 
@@ -235,7 +233,7 @@ i {
     .back-content {
         /* backface-visibility: hidden; */
         margin-bottom: 5vh;
-        transform: rotateX(180deg) translateY(30vh) translateX(1.5vh);
+        transform: rotateX(180deg) translateY(30vh) translateX(3.5vh);
     }
 
     .front-content {
