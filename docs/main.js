@@ -14,20 +14,12 @@ nextBtn.addEventListener("click", goNextPage);
 function checkOrientationVertical() {
     if (window.innerHeight > window.innerWidth) {
         return true
-        // Display the message to rotate device if the user is in portrait mode. 
-        // document.getElementById('book').style.display = 'none';
-        // document.getElementById('rotate-device-message').style.display = 'flex';
-        // document.body.style.backgroundImage = 'none';
+
     } else {
         return false
-        // document.getElementById('rotate-device-message').style.display = 'none';
-        // document.getElementById('book').style.display = 'flex';
-        // document.body.style.backgroundImage = 'url("background.jpg")';
+
     }
 }
-
-// checkOrientation();
-// window.addEventListener('resize', checkOrientation);
 
 
 let currentLocation = 1;
@@ -94,7 +86,6 @@ function goNextPage() {
                 paper1.style.zIndex = 1;
                 document.body.style.backgroundColor = darkenColor(39);
                 if (checkOrientationVertical()) {
-                    // document.body.style.backgroundColor = "rgb(139, 154, 156, 0.1)";
                     document.body.style.backgroundImage = "url(background1.JPG)";
                 }
                 document.getElementById('b1').style.backfaceVisibility = 'visible'; 
